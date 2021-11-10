@@ -31,7 +31,8 @@
                 <div v-for="(resultado, index) in resultados" :key="index" class="col-lg-4 col-md-6 mb-4 pb-2">
                     <div class="blog position-relative overflow-hidden shadow rounded">
                         <div class="position-relative overflow-hidden">
-                            <img :src="resultado.banner_noticias" class="img-fluid rounded-top" alt="">
+                            <img :data-src="resultado.banner_noticias" class="img-fluid rounded-top" alt="">
+                            <!-- <img :src="resultado.banner_noticias" class="img-fluid rounded-top" alt=""> -->
                             <div class="overlay rounded-top bg-dark"></div>
                             <!-- <div class="likes">
                                 <ul class="list-unstyled mb-0">
@@ -120,6 +121,7 @@
 
             </div>
         </div>
+        <script type="application/ecmascript" async="" :src="`${window.location.href}js/hotlink.js`"></script>
     </section>
     <!-- blog end -->
 

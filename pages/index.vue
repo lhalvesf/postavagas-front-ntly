@@ -192,7 +192,7 @@ export default {
     .catch(err => console.trace(err))
 
     /* fetch cities */
-    this.$axios.$get(`${window.location.href}/data/cidades.json`)
+    this.$axios.$get(`${window.location.href}data/cidades.json`)
     .then(res => {
         res.states.map(uf => {
           return this.estados.push({
