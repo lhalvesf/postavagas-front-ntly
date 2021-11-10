@@ -241,7 +241,7 @@ export default {
     if ( cidade ) { this.cidadeSelecionada = cidade }
 
     /* fetch cities */
-    this.$axios.$get(`/data/cidades.json`)
+    this.$axios.$get(`${window.location.href}data/cidades.json`)
     .then(res => {
         res.states.map(uf => {
           return this.estados.push({
